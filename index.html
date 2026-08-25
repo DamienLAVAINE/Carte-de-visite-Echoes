@@ -3,55 +3,178 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ECHOES - Carte de visite</title>
+
+<title>ECHOES - Groupe de reprises rock</title>
 
 <style>
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    background: #000;
-    font-family: Arial, sans-serif;
-    text-align: center;
+    background: #050505;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
-    max-width: 500px;
+    width: 100%;
+    max-width: 520px;
     margin: auto;
-    padding: 30px 20px;
+    padding: 25px 18px 40px;
 }
 
-h1 {
-    color: #f5b914;
-    font-size: 55px;
-    margin-bottom: 5px;
+/* LOGO */
+
+.logo {
+    width: 100%;
+    max-width: 430px;
+    display: block;
+    margin: 0 auto 10px;
 }
+
+/* SOUS-TITRE */
 
 .subtitle {
-    font-size: 20px;
-    margin-bottom: 35px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 22px;
+    text-transform: uppercase;
 }
 
-.button {
+.subtitle span {
+    color: #f5b914;
+}
+
+/* LIGNE */
+
+.separator {
+    height: 3px;
+    background: #f5b914;
+    margin: 20px 0 25px;
+}
+
+/* AJOUT CONTACT */
+
+.contact-button {
     display: block;
     background: #f5b914;
     color: #000;
-    padding: 20px;
-    border-radius: 15px;
-    font-size: 20px;
-    font-weight: bold;
     text-decoration: none;
-    margin: 25px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 21px;
+    padding: 19px 10px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(245,185,20,0.25);
 }
 
-.info {
-    font-size: 17px;
-    line-height: 1.8;
+.contact-button:active {
+    transform: scale(0.98);
 }
 
-.links a {
+/* LIGNES CONTACT */
+
+.contact-row {
+    display: flex;
+    align-items: center;
+    background: #171717;
+    border-radius: 16px;
+    margin: 10px 0;
+    min-height: 70px;
+    overflow: hidden;
+}
+
+.contact-icon {
+    width: 58px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.contact-text {
+    flex: 1;
+    font-size: 16px;
+    overflow-wrap: anywhere;
+}
+
+.action-button {
+    width: 62px;
+    height: 62px;
+    margin-right: 5px;
+    border-radius: 14px;
+    background: #f5b914;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 27px;
+    flex-shrink: 0;
+}
+
+/* WHATSAPP */
+
+.whatsapp .action-button {
+    background: #25D366;
+}
+
+/* MESSENGER */
+
+.messenger .action-button {
+    background: #168AFF;
+}
+
+/* RESEAUX */
+
+.social-title {
+    text-align: center;
+    margin: 35px 0 18px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #aaa;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-around;
+    gap: 12px;
+}
+
+.social {
+    flex: 1;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.social img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+.social-name {
+    font-size: 12px;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
     color: #f5b914;
-    margin: 0 8px;
+    font-style: italic;
+    font-size: 18px;
+    margin-top: 35px;
 }
+
 </style>
 </head>
 
@@ -59,29 +182,151 @@ h1 {
 
 <div class="container">
 
-<h1>ECHOES</h1>
+    <!-- LOGO ECHOES -->
+    <img src="logo.png" class="logo" alt="ECHOES">
 
-<div class="subtitle">
-Groupe de reprises / compositions rock
-</div>
+    <div class="subtitle">
+        Groupe de reprises / compositions <span>ROCK</span>
+    </div>
 
-<a class="button"
-href="groupe_echoes.vcf">
-➕ AJOUTER ECHOES À MES CONTACTS
-</a>
+    <div class="separator"></div>
 
-<div class="info">
-📞 06 70 97 22 43<br>
-✉️ groupe_echoes@outlook.fr
-</div>
+    <!-- AJOUTER AUX CONTACTS -->
 
-<div class="links">
-<p>
-<a href="https://www.facebook.com/share/1EfEfuWFmH/">Facebook</a>
-<a href="https://www.instagram.com/groupe_echoes/">Instagram</a>
-<a href="https://youtube.com/@groupe_echoes">YouTube</a>
-</p>
-</div>
+    <a class="contact-button" href="groupe_echoes.vcf">
+        ➕ AJOUTER ECHOES<br>
+        À MES CONTACTS
+    </a>
+
+    <!-- TELEPHONE -->
+
+    <div class="contact-row">
+
+        <div class="contact-icon">📞</div>
+
+        <div class="contact-text">
+            06 70 97 22 43
+        </div>
+
+        <a class="action-button" href="tel:+33670972243">
+            ☎
+        </a>
+
+    </div>
+
+
+    <!-- EMAIL -->
+
+    <div class="contact-row">
+
+        <div class="contact-icon">✉️</div>
+
+        <div class="contact-text">
+            groupe_echoes@outlook.fr
+        </div>
+
+        <a class="action-button"
+           href="mailto:groupe_echoes@outlook.fr">
+            ✉
+        </a>
+
+    </div>
+
+
+    <!-- WHATSAPP -->
+
+    <div class="contact-row whatsapp">
+
+        <div class="contact-icon">🟢</div>
+
+        <div class="contact-text">
+            Contacter sur WhatsApp
+        </div>
+
+        <a class="action-button"
+           href="https://wa.me/33670972243">
+            ➤
+        </a>
+
+    </div>
+
+
+    <!-- MESSENGER -->
+
+    <div class="contact-row messenger">
+
+        <div class="contact-icon">💬</div>
+
+        <div class="contact-text">
+            Contacter sur Messenger
+        </div>
+
+        <a class="action-button"
+           href="https://www.facebook.com/share/1EfEfuWFmH/">
+            ➤
+        </a>
+
+    </div>
+
+
+    <!-- RESEAUX SOCIAUX -->
+
+    <div class="social-title">
+        RETROUVEZ-NOUS
+    </div>
+
+    <div class="socials">
+
+        <!-- FACEBOOK -->
+
+        <a class="social"
+           href="https://www.facebook.com/share/1EfEfuWFmH/">
+
+            <img src="https://cdn.simpleicons.org/facebook/1877F2"
+                 alt="Facebook">
+
+            <div class="social-name">
+                FACEBOOK
+            </div>
+
+        </a>
+
+
+        <!-- INSTAGRAM -->
+
+        <a class="social"
+           href="https://www.instagram.com/groupe_echoes/">
+
+            <img src="https://cdn.simpleicons.org/instagram/E4405F"
+                 alt="Instagram">
+
+            <div class="social-name">
+                INSTAGRAM
+            </div>
+
+        </a>
+
+
+        <!-- YOUTUBE -->
+
+        <a class="social"
+           href="https://youtube.com/@groupe_echoes">
+
+            <img src="https://cdn.simpleicons.org/youtube/FF0000"
+                 alt="YouTube">
+
+            <div class="social-name">
+                YOUTUBE
+            </div>
+
+        </a>
+
+    </div>
+
+
+    <div class="footer">
+        Merci pour votre soutien !
+    </div>
 
 </div>
 
