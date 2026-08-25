@@ -3,332 +3,83 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>ECHOES - Groupe de reprises rock</title>
-
+<title>ECHOES - Groupe de reprises / Covers / Compos rock</title>
 <style>
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    background: #050505;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.container {
-    width: 100%;
-    max-width: 520px;
-    margin: auto;
-    padding: 25px 18px 40px;
-}
-
-/* LOGO */
-
-.logo {
-    width: 100%;
-    max-width: 430px;
-    display: block;
-    margin: 0 auto 10px;
-}
-
-/* SOUS-TITRE */
-
-.subtitle {
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 10px 0 22px;
-    text-transform: uppercase;
-}
-
-.subtitle span {
-    color: #f5b914;
-}
-
-/* LIGNE */
-
-.separator {
-    height: 3px;
-    background: #f5b914;
-    margin: 20px 0 25px;
-}
-
-/* AJOUT CONTACT */
-
-.contact-button {
-    display: block;
-    background: #f5b914;
-    color: #000;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-    font-size: 21px;
-    padding: 19px 10px;
-    border-radius: 18px;
-    margin-bottom: 25px;
-    box-shadow: 0 4px 15px rgba(245,185,20,0.25);
-}
-
-.contact-button:active {
-    transform: scale(0.98);
-}
-
-/* LIGNES CONTACT */
-
-.contact-row {
-    display: flex;
-    align-items: center;
-    background: #171717;
-    border-radius: 16px;
-    margin: 10px 0;
-    min-height: 70px;
-    overflow: hidden;
-}
-
-.contact-icon {
-    width: 58px;
-    text-align: center;
-    font-size: 28px;
-}
-
-.contact-text {
-    flex: 1;
-    font-size: 16px;
-    overflow-wrap: anywhere;
-}
-
-.action-button {
-    width: 62px;
-    height: 62px;
-    margin-right: 5px;
-    border-radius: 14px;
-    background: #f5b914;
-    color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    font-size: 27px;
-    flex-shrink: 0;
-}
-
-/* WHATSAPP */
-
-.whatsapp .action-button {
-    background: #25D366;
-}
-
-/* MESSENGER */
-
-.messenger .action-button {
-    background: #168AFF;
-}
-
-/* RESEAUX */
-
-.social-title {
-    text-align: center;
-    margin: 35px 0 18px;
-    font-size: 15px;
-    letter-spacing: 2px;
-    color: #aaa;
-}
-
-.socials {
-    display: flex;
-    justify-content: space-around;
-    gap: 12px;
-}
-
-.social {
-    flex: 1;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-}
-
-.social img {
-    width: 65px;
-    height: 65px;
-    object-fit: contain;
-    display: block;
-    margin: auto;
-}
-
-.social-name {
-    font-size: 12px;
-    margin-top: 8px;
-    font-weight: bold;
-}
-
-/* FOOTER */
-
-.footer {
-    text-align: center;
-    color: #f5b914;
-    font-style: italic;
-    font-size: 18px;
-    margin-top: 35px;
-}
-
+*{box-sizing:border-box}
+body{margin:0;background:#050505;color:white;font-family:Arial,Helvetica,sans-serif}
+.container{width:100%;max-width:520px;margin:auto;padding:25px 18px 40px}
+.logo{width:100%;max-width:430px;display:block;margin:0 auto 10px}
+.subtitle{text-align:center;font-size:18px;font-weight:bold;margin:10px 0 22px;text-transform:uppercase}
+.subtitle span{color:#f5b914}
+.separator{height:3px;background:#f5b914;margin:20px 0 25px}
+.contact-button{display:block;background:#f5b914;color:#000;text-decoration:none;text-align:center;font-weight:bold;font-size:21px;padding:19px 10px;border-radius:18px;margin-bottom:25px;box-shadow:0 4px 15px rgba(245,185,20,.25)}
+.contact-row{display:flex;align-items:center;background:#171717;border-radius:16px;margin:10px 0;min-height:74px;overflow:hidden;padding-left:14px}
+.contact-icon{width:55px;height:55px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.contact-icon img{width:48px;height:48px;object-fit:contain}
+.contact-text{flex:1;font-size:16px;padding:0 10px;overflow-wrap:anywhere}
+.action-button{width:58px;height:58px;margin-right:7px;border-radius:14px;background:#f5b914;color:#000;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:26px;flex-shrink:0}
+.social-title{text-align:center;margin:35px 0 18px;font-size:15px;letter-spacing:2px;color:#aaa}
+.socials{display:flex;justify-content:space-around;gap:12px}
+.social{flex:1;text-decoration:none;color:white;text-align:center}
+.social img{width:65px;height:65px;object-fit:contain;display:block;margin:auto}
+.social-name{font-size:12px;margin-top:8px;font-weight:bold}
+.footer{text-align:center;color:#f5b914;font-style:italic;font-size:18px;margin-top:35px}
 </style>
 </head>
-
 <body>
-
 <div class="container">
 
-    <!-- LOGO ECHOES -->
-    <img src="Logo.png" class="logo" alt="ECHOES">
+<img src="logo.png" class="logo" alt="ECHOES">
 
-    <div class="subtitle">
-        Groupe de reprises / compositions <span>ROCK</span>
-    </div>
+<div class="subtitle">Groupe de reprises / compositions <span>ROCK</span></div>
+<div class="separator"></div>
 
-    <div class="separator"></div>
+<a class="contact-button" href="groupe_echoes.vcf">
+➕ AJOUTER ECHOES<br>À MES CONTACTS
+</a>
 
-    <!-- AJOUTER AUX CONTACTS -->
-
-    <a class="contact-button" href="groupe_echoes.vcf">
-        ➕ AJOUTER ECHOES<br>
-        À MES CONTACTS
-    </a>
-
-    <!-- TELEPHONE -->
-
-    <div class="contact-row">
-
-        <div class="contact-icon">📞</div>
-
-        <div class="contact-text">
-            06 70 97 22 43
-        </div>
-
-        <a class="action-button" href="tel:+33670972243">
-            ☎
-        </a>
-
-    </div>
-
-
-    <!-- EMAIL -->
-
-    <div class="contact-row">
-
-        <div class="contact-icon">✉️</div>
-
-        <div class="contact-text">
-            groupe_echoes@outlook.fr
-        </div>
-
-        <a class="action-button"
-           href="mailto:groupe_echoes@outlook.fr">
-            ✉
-        </a>
-
-    </div>
-
-
-    <!-- WHATSAPP -->
-
-    <div class="contact-row whatsapp">
-
-        <div class="contact-icon">🟢</div>
-
-        <div class="contact-text">
-            Contacter sur WhatsApp
-        </div>
-
-        <a class="action-button"
-           href="https://wa.me/33670972243">
-            ➤
-        </a>
-
-    </div>
-
-
-    <!-- MESSENGER -->
-
-    <div class="contact-row messenger">
-
-        <div class="contact-icon">💬</div>
-
-        <div class="contact-text">
-            Contacter sur Messenger
-        </div>
-
-        <a class="action-button"
-           href="https://www.facebook.com/share/1EfEfuWFmH/">
-            ➤
-        </a>
-
-    </div>
-
-
-    <!-- RESEAUX SOCIAUX -->
-
-    <div class="social-title">
-        RETROUVEZ-NOUS
-    </div>
-
-    <div class="socials">
-
-        <!-- FACEBOOK -->
-
-        <a class="social"
-           href="https://www.facebook.com/share/1EfEfuWFmH/">
-
-            <img src="https://cdn.simpleicons.org/facebook/1877F2"
-                 alt="Facebook">
-
-            <div class="social-name">
-                FACEBOOK
-            </div>
-
-        </a>
-
-
-        <!-- INSTAGRAM -->
-
-        <a class="social"
-           href="https://www.instagram.com/groupe_echoes/">
-
-            <img src="https://cdn.simpleicons.org/instagram/E4405F"
-                 alt="Instagram">
-
-            <div class="social-name">
-                INSTAGRAM
-            </div>
-
-        </a>
-
-
-        <!-- YOUTUBE -->
-
-        <a class="social"
-           href="https://youtube.com/@groupe_echoes">
-
-            <img src="https://cdn.simpleicons.org/youtube/FF0000"
-                 alt="YouTube">
-
-            <div class="social-name">
-                YOUTUBE
-            </div>
-
-        </a>
-
-    </div>
-
-
-    <div class="footer">
-        Merci pour votre soutien !
-    </div>
-
+<div class="contact-row">
+  <div class="contact-icon"><img src="https://cdn.simpleicons.org/phone/f5b914" alt="Téléphone"></div>
+  <div class="contact-text">06 70 97 22 43</div>
+  <a class="action-button" href="tel:+33670972243" aria-label="Appeler">☎</a>
 </div>
 
+<div class="contact-row">
+  <div class="contact-icon"><img src="https://cdn.simpleicons.org/maildotru/f5b914" alt="Email"></div>
+  <div class="contact-text">groupe_echoes@outlook.fr</div>
+  <a class="action-button" href="mailto:groupe_echoes@outlook.fr" aria-label="Envoyer un mail">✉</a>
+</div>
+
+<div class="contact-row">
+  <div class="contact-icon"><img src="https://cdn.simpleicons.org/whatsapp/25D366" alt="WhatsApp"></div>
+  <div class="contact-text">Contacter sur WhatsApp</div>
+  <a class="action-button" href="https://wa.me/33670972243" aria-label="WhatsApp">➜</a>
+</div>
+
+<div class="contact-row">
+  <div class="contact-icon"><img src="https://cdn.simpleicons.org/messenger/00B2FF" alt="Messenger"></div>
+  <div class="contact-text">Contacter sur Messenger</div>
+  <a class="action-button" href="https://www.facebook.com/share/1EfEfuWFmH/" aria-label="Messenger">➜</a>
+</div>
+
+<div class="social-title">RETROUVEZ-NOUS</div>
+
+<div class="socials">
+  <a class="social" href="https://www.facebook.com/share/1EfEfuWFmH/">
+    <img src="https://cdn.simpleicons.org/facebook/1877F2" alt="Facebook">
+    <div class="social-name">FACEBOOK</div>
+  </a>
+  <a class="social" href="https://www.instagram.com/groupe_echoes/">
+    <img src="https://cdn.simpleicons.org/instagram/E4405F" alt="Instagram">
+    <div class="social-name">INSTAGRAM</div>
+  </a>
+  <a class="social" href="https://youtube.com/@groupe_echoes">
+    <img src="https://cdn.simpleicons.org/youtube/FF0000" alt="YouTube">
+    <div class="social-name">YOUTUBE</div>
+  </a>
+</div>
+
+<div class="footer">Merci pour votre soutien !</div>
+</div>
 </body>
 </html>
